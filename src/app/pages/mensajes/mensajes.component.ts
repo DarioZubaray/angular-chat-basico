@@ -12,7 +12,7 @@ export class MensajesComponent implements OnInit {
   constructor(public wsService: WebsocketService) { }
 
   ngOnInit() {
-    this.nombre = this.wsService.usuario.nombre;
+    this.nombre = this.wsService.getUsuario().nombre;
   }
 
 }
