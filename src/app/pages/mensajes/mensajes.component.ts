@@ -15,4 +15,7 @@ export class MensajesComponent implements OnInit {
     this.nombre = this.wsService.getUsuario().nombre;
   }
 
+  salir() {
+    this.wsService.logoutWS();
+  }
 }
