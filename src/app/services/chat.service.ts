@@ -28,4 +28,8 @@ export class ChatService {
   getUsuariosActivos(){
     return this.wsService.listen('usuarios-activos');
   }
+
+  emitirUsuariosActivos() {
+    return this.wsService.emitir('obtener-usuarios');
+  }
 }
